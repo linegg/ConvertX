@@ -1,0 +1,55 @@
+body {
+	font-family:microsoft yahei;
+}
+#requirement {
+	#background-color:#EE3B3B;
+}
+
+#main{
+	text-align:center;
+	margin-top:5%;
+}
+
+li {
+	list-style-type:none;
+	margin:10px;
+}
+
+#head{
+	text-align:center;
+	font-size:22px;
+	
+}
+#notice{
+	text-align:center;
+}
+
+.model{
+	border-collapse:collapse;
+	font-size:12px;
+}
+.model th{
+	background-color:green;
+	color:black;
+	font-size:13px;
+}
+
+.model .cus{
+	background-color:red;
+}
+/*customfields css*/
+.cus_help{
+	width:80%;
+}
+
+.cus_div{
+	text-align:center;
+}
+/*import css*/
+.import_help{
+	width:80%;
+}
+
+.import_div{
+	text-align:center;
+}

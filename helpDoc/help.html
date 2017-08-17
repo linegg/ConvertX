@@ -1,0 +1,282 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+<title>Testlink导入辅助工具使用帮助</title>
+</head>
+<body>
+<div id="helptitle">
+<h1>Testlink导入辅助工具使用帮助</h1>
+<input type="button" name="back" value="返回" onclick="javascript:history.go(-1)"/>
+</div>
+<div>
+<h3>注意事项：</h3>
+<ul>
+<li>1、如果希望导入后的用例直接关联到需求，请先导入测试需求。</li>
+<li>2、导入的用例或需求必须为xls格式，请不要用直接修改扩展名的方式将xlsx更改到xls。</li>
+<li>3、转换格式时，尽量删除无关标签页。如果未删除无关标签页，请在下载页面中自行选择正确的内容下载。</li>
+<li>4、不能在测试用例和测试需求中使用同名字段如：“适用范围”。</li>
+<li>5、测试需求的“软件需求编号”、“软件需求描述”、“软件需求优先级”三个字段在为空的情况下会向上获取最近内容。</li>
+<li>6、在用例的操作步骤和预期结果中，如需分点，请使用“1、”、“2、”。不要“1、”、“1）”、“1.”混合使用。</li>
+<li>7、不要使用重名用例。如果出现重名用例，Testlink默认会在名称前加上时间戳，导致用例标题不易查看。</li>
+<li>8、测试需求和测试用例的部分基础字段在Testlink中实际也用自定义字段方式实现，需要管理员先行完成创建和指派。</li>
+<li>9、如果xls文件开启了共享，将导致格式无法转换。</li>
+<li>10、在标签页中按“Ctrl+End”，如果定位的行号异常（行号达到10000以上甚至更多），将导致格式无法转换。</li>
+<li>11、在xls文件的文件名称中，不要出现空格（如文件名为“WES7 5.10用例”，可用“WES7_5.10用例”代替）。否则将导致转换后的文件名异常。</li>
+<li>12、在转换格式或者导入用例过程中，如果较慢，请耐心等待。</li>
+</ul>
+</div>
+<div>
+<h3>测试需求示例模板：</h3>
+<table class="model" border="1px" cellspacing="0px">
+	<tr>	
+		<th>软件需求集编号</th>
+		<th>软件需求集</th>
+		<th>软件需求编号</th>
+		<th>软件需求简述</th>
+		<th>软件需求优先级</th>
+		<th>软件需求来源</th>
+		<th>用户场景说明</th>
+		<th>适用范围</th>
+		<th>备注</th>
+		<th>测试需求编号</th>
+		<th>测试需求名称</th>
+		<th>测试需求描述</th>
+		<th>测试需求优先级</th>
+		<th>测试类型</th>
+		<th>用例规模</th>
+		<th>用例设计方法</th>
+	</tr>
+	<tr>
+		<td>COS-SR00</td>
+		<td>工厂生产</td>
+		<td>COS-SR00-01</td>
+		<td>支持系统灌制</td>
+		<td>低</td>
+		<td>CCD-11</td>
+		<td>角色：工厂生产人员，拷机段、PQC段和OQC段人员</td>
+		<td>COS</td>
+		<td></td>
+		<td>COS-TR00-010</td>
+		<td>检测系统升级</td>
+		<td>检测正常网络环境下的升级情况</td>
+		<td>低</td>
+		<td>功能</td>
+		<td>1</td>
+		<td>场景设计法</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td>低</td>
+		<td>CCD-11</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td>COS-TR00-011</td>
+		<td>检测系统升级现异常处理</td>
+		<td>检测系统升级过程中，异常断网，断电后能否继续正常升级</td>
+		<td>低</td>
+		<td>功能</td>
+		<td>2</td>
+		<td>场景设计法</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td>COS-SR00-02</td>
+		<td>保证出厂后可引导用户设置系统关键配置，包括网络、服务器地址、时间等</td>
+		<td>低</td>
+		<td>CCD-02</td>
+		<td>引导用户进行主要应用配置</td>
+		<td>COS&WES</td>
+		<td></td>
+		<td>COS-TR00-020</td>
+		<td>检测开机启动向导</td>
+		<td>检测升级完系统后是否出现开机启动向导</td>
+		<td>低</td>
+		<td>功能</td>
+		<td>1</td>
+		<td>场景设计法</td>
+	</tr>
+	<tr>
+		<td>COS-SR01</td>
+		<td>最小系统</td>
+		<td>COS-SR01-01</td>
+		<td>保证系统存储盘无毒</td>
+		<td>高</td>
+		<td>CCD-11</td>
+		<td></td>
+		<td>COS&WES</td>
+		<td></td>
+		<td>COS-TR01-010</td>
+		<td>检测系统文件病毒情况</td>
+		<td>检测系统文件是否有病毒</td>
+		<td>高</td>
+		<td>可靠性</td>
+		<td>1</td>
+		<td>场景设计法</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td>COS-SR01-02</td>
+		<td>上电开机</td>
+		<td>中</td>
+		<td>CCD-00</td>
+		<td></td>
+		<td>COS&WES</td>
+		<td></td>
+		<td>COS-TR01-020</td>
+		<td>检测开机启动过程</td>
+		<td>检测开机启动过程中画面、显示切换过程</td>
+		<td>低</td>
+		<td>功能</td>
+		<td>1</td>
+		<td>场景设计法</td>
+	</tr>
+</table>
+<p>1、测试需求表头需要和模板一致</p>
+<p>2、转换后的XML文件在导入前，需要确认在Testlink中相应字段是否已经指派到项目<a href="customfields.html" target="_blank">（如何指派自定义字段？）</a></p>
+<p>3、xls文件的每个标签页对应一个转换后的XML文件，按需导入。<a href="import.html" target="_blank">(为什么会有多份XML？如何导入？)</a></p>
+</div>
+<br>
+<div>
+<h3>测试用例示例模板：</h3>
+<table class="model" border="1px" cellspacing="0px">
+	<tr>
+		<th>测试用例集1</th>
+		<th>测试用例集2</th>
+		<th>测试需求</th>
+		<th>用例名称</th>
+		<th>优先级</th>
+		<th>执行方式</th>
+		<th>关键字</th>
+		<th>摘要</th>
+		<th>前提条件</th>
+		<th>操作步骤</th>
+		<th>预期结果</th>
+		<th>实际结果</th>
+		<th>预估用时</th>
+		<th>编写人</th>
+		<th>日期</th>
+		<th class="cus">用例适用范围</th>
+		<th class="cus">字段名2</th>
+		<th class="cus">字段名3</th>
+		<th class="cus">字段名4</th>
+		<th class="cus">字段名5</th>
+	</tr>
+	<tr>
+		<td>电源控制</td>
+		<td>开关机场景</td>
+		<td>COS-TR01-020</td>
+		<td>开机过程</td>
+		<td>高</td>
+		<td></td>
+		<td></td>
+		<td>开关机场景</td>
+		<td></td>
+		<td>过程：按下电源按钮，直到进入桌面；<br>
+要点：注意观察整个过程中显示屏的显示效果</td>
+		<td>1、正常显示升腾LOGO，自动登陆桌面；<br>
+2、无闪屏、花屏、雪花、亮线等显示问题；<br>
+3、电源灯由红色变成绿色<br>
+X86平台：开机会闪现两次Logo；一次为BIOS，一次为系统Logo(COS系统Logo跟BIOS Logo为同一个Logo)
+ARM平台：开机会闪现一次系统Logo</td>
+		<td></td>
+		<td>5</td>
+		<td></td>
+		<td></td>
+		<td>COS&WES</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td>COS-TR01-021</td>
+		<td>开机时间</td>
+		<td>高</td>
+		<td></td>
+		<td></td>
+		<td>开关机场景</td>
+		<td></td>
+		<td>过程：记录从按下电源按钮，直到显示网络托盘图标为止；
+要点：体验等待时间长短</td>
+		<td>COS小于20s，WES小于50S</td>
+		<td></td>
+		<td>10</td>
+		<td></td>
+		<td></td>
+		<td>COS&WES</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>电源管理</td>
+		<td>COS-TR11-020</td>
+		<td>关闭电源总开关</td>
+		<td>低</td>
+		<td></td>
+		<td></td>
+		<td>电源管理</td>
+		<td></td>
+		<td>1、关闭电源管理策略的总开关<br>
+2、使客户机空闲15分钟</td>
+		<td>1、电源管理策略总开关去勾，且所有的配置内容灰化不允许配置<br>
+2、客户机15分钟后不会关闭显示器</td>
+		<td></td>
+		<td>10</td>
+		<td></td>
+		<td></td>
+		<td>COS&WES</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>网络配置场景</td>
+		<td>网络配置</td>
+		<td>COS-TR01-050</td>
+		<td>DHCP获取IP</td>
+		<td>高</td>
+		<td></td>
+		<td></td>
+		<td>网络配置场景</td>
+		<td>P1.TC已正常开机<br>
+P2.TC网卡和网线均工作正常</td>
+		<td>1、进入网络配置界面；<br>
+2、检测默认的IP获取方式；<br>
+3、检测Ping局域网内其他主机是否成功；<br>
+4、重启客户机<br>
+备注：双网卡需要测试两个网卡</td>
+		<td>1、正常进入网络配置界面；<br>
+2、默认为DHCP方式，华为版本默认不勾选“使用802.1x认证”复选框；<br>
+3、Ping成功，说明DHCP获取到正确的IP；<br>
+4、重启后，，网络获取正常</td>
+		<td></td>
+		<td>5</td>
+		<td></td>
+		<td></td>
+		<td>COS&WES</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>	
+</table>
+<p>1、绿色部分为基础字段（实际结果和日期两列不被导入），红色部分为自定义字段</p>
+<p>2、自定义字段选填，在格式转换前，请将自定义字段名称填到输入框后再开始转换</p>
+<p>3、转换后的XML文件在导入前，需要确认在Testlink中相应字段是否已经指派到项目</p>
+<p>4、“执行方式”字段可填写“自动的”或“手工”，为空则默认为“手工”</p>
+</div>
+</body>
+</html>
