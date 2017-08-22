@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b766c5c-20e7-417a-9252-24d74c3d0545" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/helpDoc/help.html" afterPath="$PROJECT_DIR$/helpDoc/help.html" />
-    </list>
+    <list default="true" id="2b766c5c-20e7-417a-9252-24d74c3d0545" name="Default" comment="" />
     <ignored path="ConvertX.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -137,7 +135,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
